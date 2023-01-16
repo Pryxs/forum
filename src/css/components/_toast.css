@@ -1,0 +1,44 @@
+.toast{
+    display: block;
+    background-color: white;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    opacity: 0;
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.toast.-success{
+    background: var(--success-color);
+}
+
+.toast.-alert{
+    background: var(--alert-color);
+}
+
+
+.launch{
+    animation: toast 3s ease-in-out;
+}
+
+@keyframes toast {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    30% {
+        bottom: 5%;
+        opacity: 1;
+    }
+    80% {
+        bottom: 5%;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        bottom: 2%;
+    }
+}

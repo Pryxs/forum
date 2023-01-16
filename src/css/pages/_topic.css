@@ -1,0 +1,120 @@
+.topic-page{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        background: var(--main-gradiant);
+}
+
+.topic-page>main{
+        padding: 1em;
+        gap: 1em;
+        width: 70%;
+        flex-direction: column;
+        display: flex;
+}
+
+.topic-page_content{
+        padding: 1em;
+        background: var(--main-color);
+        border-radius: var(--border-radius);
+}
+
+/***********
+COMMENTS 
+************/
+
+.topic-page_comments{
+        margin-top: 1em;
+        overflow-y: scroll;
+}
+
+.topic-page_comments::-webkit-scrollbar {
+width: 3px;
+}
+
+.topic-page_comments::-webkit-scrollbar-thumb {
+background-color: var(--text-color-light); 
+border-radius: 20px; 
+cursor: pointer;
+}
+
+.topic-page_comments form{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        margin-right: 1em;
+}
+
+.topic-page_comments input[type="text"]{
+        background-color: transparent;
+        color: var(--text-color);
+        border-bottom: solid 1px var(--text-color-light);
+        height: auto;
+}
+
+.topic-page_comments input::placeholder{
+        color: #bbb; 
+}
+
+.topic-page_comments input:focus{
+        outline: none;
+        background-color: var(--main-color);
+        border-bottom: solid 2px var(--text-color);
+}
+
+
+.topic-page_comments input[type="submit"]{
+        width: fit-content;
+}
+
+/***********
+ASIDE 
+************/
+
+.topic-page>aside{
+        background-color: var(--secondary-color);
+        width: 30%;
+        padding: 1em;
+}
+
+
+.topic-page .user-topics_list{
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+}
+
+.topic-page .user-topics_item{
+        background-color: var(--main-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .6em;
+        border-radius: var(--border-radius);
+        padding: 1em;
+}
+
+.topic-page ul li{
+        position: relative;
+}
+
+.topic-page a{
+        position: absolute;
+        inset: 0;
+        text-align: center;
+        line-height: 3em;
+        width: 100%;
+        height: 100%;
+        border-radius: var(--border-radius);
+        background-color: var(--dynamic-color);
+        color: var(--text-color);
+        transition: .2s ease-in-out; 
+        transform-origin: bottom;
+        opacity: 0;
+}
+
+.topic-page li:hover a{
+        opacity: 1;
+}
+

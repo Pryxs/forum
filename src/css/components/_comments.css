@@ -1,0 +1,15 @@
+.comments-container{
+    margin-top: 2em;
+}
+
+.comments_list{
+
+}
+
+.comments_list_item{
+    margin-bottom: 2em;
+}
+
+.comments_list_item_infos span:first-child{
+    font-weight: bold;
+}

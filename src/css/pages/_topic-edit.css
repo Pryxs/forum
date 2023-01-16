@@ -1,0 +1,19 @@
+.topic-edit-page{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-gradiant);
+}
+
+.topic-edit-page form{
+    width: 40%;
+}
+
+.topic-edit-page input[type="submit"]{
+    width: fit-content;
+    margin: 2em auto 0 auto;
+}

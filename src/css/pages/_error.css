@@ -1,0 +1,22 @@
+.error-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-gradiant);
+}
+
+.error-page_content{
+    margin-top: -15vh;
+    width: fit-content;
+}
+
+.error-page_content span{
+    display: block;
+}
+
+.error-page_content span:first-child{
+    font-size: 3rem;
+}

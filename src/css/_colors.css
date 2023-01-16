@@ -1,0 +1,14 @@
+:root {
+    --main-color: #322d63;
+    --secondary-color: #27234e;
+    --dynamic-color: #b6416e;
+    --dynamic-color-dark: #63002B;
+    --text-color: #d9e9f0;
+    --text-color-light: #bbb7df;
+
+    --alert-color: #ff4757;
+    --success-color: #2ed573;
+
+    --main-gradiant: linear-gradient(90deg, var(--secondary-color) 50%, var(--main-color) 120%);
+    --dynamic-gradiant: linear-gradient(45deg, var(--dynamic-color-dark) 0%, var(--dynamic-color) 100%);
+}
